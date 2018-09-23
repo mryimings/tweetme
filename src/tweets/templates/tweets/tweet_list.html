@@ -1,0 +1,11 @@
+<p>This is tweet list hahaha</p>
+
+{% for obj in object_list %}
+    <p>
+    {{obj.content}}<br/>
+    {{obj.user}}<br/>
+    {{obj.timestamp|timesince}}<br/><br/>
+    </p>
+{% empty %}}
+    <li> No Tweets Yet ysun647haha </li>
+{% endfor %}
